@@ -1,0 +1,301 @@
+/* InvoiceForm.css */
+.invoice-form {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 25px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  line-height: 1.6;
+}
+
+.invoice-template {
+  color: #333;
+}
+
+.invoice-template h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 12px;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.invoice-header p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c3e50;
+}
+
+.patient-details {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.patient-details p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.patient-details strong {
+  min-width: 140px;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.invoice-form input,
+.invoice-form select {
+  border: 1px solid #d1d5db;
+  padding: 8px 12px;
+  margin-left: 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  flex: 1;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.invoice-form input:focus,
+.invoice-form select:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.doctor-assignment {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.doctor-assignment strong {
+  color: #2c3e50;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.services-table {
+  margin: 25px 0;
+}
+
+.services-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.services-table th {
+  background: #3498db;
+  color: white;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 2px solid #2980b9;
+}
+
+.services-table td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f1f1f1;
+  background: white;
+}
+
+.services-table input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  padding: 6px 10px;
+  border-radius: 3px;
+  margin: 0;
+  font-size: 14px;
+  background: white;
+}
+
+.services-table input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+.add-service-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.add-service-btn:hover {
+  background: #2980b9;
+  transform: translateY(-1px);
+}
+
+.remove-service-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.remove-service-btn:hover {
+  background: #c0392b;
+}
+
+.invoice-totals {
+  margin: 25px 0;
+  padding: 20px;
+  background: #f8fafc;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+}
+
+.invoice-totals p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 15px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #d1d5db;
+}
+
+.invoice-totals strong {
+  color: #2c3e50;
+  font-size: 15px;
+}
+
+.grand-total {
+  font-size: 17px !important;
+  font-weight: bold;
+  color: #e74c3c !important;
+  border-bottom: 2px solid #e74c3c !important;
+  padding-top: 8px !important;
+}
+
+.clinic-info {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  color: #666;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.clinic-info p {
+  margin: 0;
+  font-weight: 500;
+  display: inline;
+}
+
+/* Patient data field styling */
+.patient-data-field {
+  background-color: #f8f9fa;
+  border: 1px solid #d1d5db;
+  color: #495057;
+  font-weight: 500;
+}
+
+.patient-data-field:focus {
+  background-color: #e9ecef;
+  border-color: #3498db;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .invoice-form {
+    padding: 15px;
+    margin: 10px;
+  }
+  
+  .invoice-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .patient-details p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .patient-details input,
+  .patient-details select {
+    margin-left: 0;
+    margin-top: 6px;
+    width: 100%;
+  }
+  
+  .services-table {
+    overflow-x: auto;
+  }
+  
+  .services-table table {
+    min-width: 550px;
+  }
+  
+  .invoice-totals p {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .services-table th,
+  .services-table td {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  
+  .doctor-assignment {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .doctor-assignment input {
+    margin-left: 0;
+    margin-top: 6px;
+    width: 100%;
+  }
+  
+  .clinic-info {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,824 @@
+/* Home Page Styles - Based on App2.css */
+
+.dental-care-website {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-image: url("../assets/images/new_homebg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 100px;
+  flex: 1;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: calc(100vh - 84px);
+}
+
+.hero-text {
+  max-width: 500px;
+  color: #000;
+}
+
+.brand {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.tagline {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.appointment-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.appointment-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+/* Services Section Styles */
+.services-section {
+  padding: 80px;
+  text-align: center;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 48px !important;
+  font-weight: 700;
+  margin: 60px 0 120px 0;
+  text-align: center;
+  color: #000;
+  letter-spacing: 1px;
+  padding-top: 40px;
+}
+
+.section-title.white {
+  color: #fff;
+}
+
+/* Force gap for specific sections */
+.services-section .section-title {
+  margin-bottom: 80px !important;
+}
+
+.why-choose-us-section .section-title {
+  margin-bottom: 80px !important;
+}
+
+.reviews-section .section-title {
+  margin-bottom: 80px !important;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-cards .service-card:nth-child(4),
+.service-cards .service-card:nth-child(5) {
+  grid-column: span 1;
+}
+
+.service-cards .service-card:nth-child(4) {
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.service-cards .service-card:nth-child(5) {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  width: 120px;
+  height: 120px;
+  background: #333;
+  border-radius: 15px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.service-icon img.dental-checkup-icon {
+  filter: none;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.learn-more-btn {
+  background: #c8f7c5;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #a8e6cf;
+  transform: translateY(-2px);
+}
+
+/* Icon styles using CSS */
+.icon-microscope::before {
+  content: "🔬";
+  font-size: 32px;
+  color: white;
+}
+
+.icon-tooth-extraction::before {
+  content: "🦷";
+  font-size: 32px;
+  color: white;
+}
+
+.icon-bone-grafting::before {
+  content: "⚕️";
+  font-size: 32px;
+  color: white;
+}
+
+.icon-sleep-apnea::before {
+  content: "😴";
+  font-size: 32px;
+  color: white;
+}
+
+.icon-anesthesia::before {
+  content: "💉";
+  font-size: 32px;
+  color: white;
+}
+
+/* Combined Why Choose Us and About Section */
+.why-choose-about-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Why Choose Us Part */
+.why-choose-us-section {
+  padding: 100px;
+  text-align: center;
+  background: linear-gradient(
+    to bottom,
+    #333 0%,
+    #333 60%,
+    #fff 60%,
+    #fff 100%
+  );
+  position: relative;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background: #d9d9d9;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.stat-icon {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.stat-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.2;
+}
+
+/* About Section - Simple Layout */
+.about-section {
+  padding: 0;
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  overflow: hidden;
+  background: #333;
+}
+
+.about-content {
+  flex: 1;
+  color: #fff;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.about-section .section-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-text {
+  font-size: 20px;
+  padding: 15px 30px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.about-section .learn-more-btn {
+  background: #d9d9d9;
+  color: #000;
+  align-self: center;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Reviews Section Styles */
+.reviews-section {
+  padding: 100px;
+  text-align: center;
+  background: #fff;
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review-card {
+  background: #f5f5f5;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  overflow: hidden;
+}
+
+.review-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.review-content {
+  padding: 30px;
+  flex: 1;
+}
+
+.review-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  color: #000;
+  font-size: 14px;
+}
+
+.see-more-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+/* Contact Section Styles - FIXED */
+.contact-section {
+  padding: 50px 100px 100px;
+  background: #fff;
+}
+
+.contact-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.contact-title {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  color: #000;
+  text-align: left;
+  background: transparent;
+  padding: 0;
+}
+
+.contact-illustration {
+  width: 300px;
+  height: 400px;
+  margin: 40px 0 0 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.contact-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 400px;
+  margin-top: 160px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* Footer Styles */
+.footer {
+  background: #2c2c2c;
+  color: white;
+  padding: 60px 100px 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-link {
+  background: none;
+  border: none;
+  color: #ddd;
+  font-size: 14px;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: inherit;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-column p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer-social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 8px;
+}
+
+.footer-social-icon:hover {
+  background-color: #0070f3;
+  transform: translateY(-3px);
+}
+
+.footer-social-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .hero-content,
+  .services-section,
+  .why-choose-us-section,
+  .about-section,
+  .reviews-section,
+  .contact-section,
+  .footer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .contact-title {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 968px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .contact-form {
+    margin-top: 0;
+    max-width: 100%;
+  }
+  
+  .contact-illustration {
+    margin: 20px auto 0;
+    justify-content: center;
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+  }
+
+  .service-cards .service-card:nth-child(4),
+  .service-cards .service-card:nth-child(5) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .review-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .contact-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tagline {
+    font-size: 36px;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+  
+  .services-section,
+  .why-choose-us-section,
+  .reviews-section,
+  .contact-section {
+    padding: 40px 20px;
+  }
+  
+  .about-content {
+    padding: 60px 30px;
+  }
+}
+
+/* URGENT FIX FOR CONTACT SECTION BLACK BACKGROUND */
+.contact-section {
+  background: #ffffff !important;
+}
+
+.contact-content {
+  background: transparent !important;
+}
+
+.contact-text {
+  background: transparent !important;
+}
+
+.contact-title {
+  background: transparent !important;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000 !important;
+}
+
+.contact-title::before,
+.contact-title::after {
+  display: none !important;
+}
+
+/* Force white background for all contact section elements */
+.contact-section * {
+  background-color: transparent !important;
+}
+
+.contact-section {
+  background-color: #ffffff !important;
+  background-image: none !important;
+}
+
+/* Ensure the text is visible */
+.contact-title {
+  color: #000000 !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+}
+
+/* Fix Contact Form Layout */
+.contact-form {
+  flex: 1;
+  max-width: 400px;
+  margin-top: 160px;
+  background: transparent !important;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  background: #ffffff !important;
+  color: #000000 !important;
+  box-sizing: border-box; /* This is important */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.form-group textarea {
+  height: 120px;
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #333333 !important;
+  transform: translateY(-2px);
+}
+
+/* Ensure form container is properly sized */
+.contact-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent !important;
+}
